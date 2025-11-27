@@ -301,35 +301,50 @@ export default function App() {
 
         <section
           id="contact"
-          className="relative overflow-hidden rounded-[3rem] border border-white/10 bg-gradient-to-br from-blue-900/20 via-slate-800/40 to-slate-900/40 p-12 backdrop-blur-xl sm:p-16"
+          className="relative overflow-hidden rounded-[3rem] border border-white/10 
+  bg-gradient-to-br from-blue-900/20 via-slate-800/40 to-slate-900/40
+  p-10 sm:p-12 lg:p-16 backdrop-blur-xl"
         >
-          <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-gradient-to-br from-blue-500/20 to-cyan-500/20 blur-3xl" />
-          <div className="absolute -bottom-20 -left-20 h-64 w-64 rounded-full bg-gradient-to-tr from-emerald-500/20 to-blue-500/20 blur-3xl" />
+          <div
+            className="absolute -right-20 -top-20 h-64 w-64 rounded-full 
+    bg-gradient-to-br from-blue-500/20 to-cyan-500/20 blur-3xl"
+          />
+
+          <div
+            className="absolute -bottom-20 -left-20 h-64 w-64 rounded-full 
+    bg-gradient-to-tr from-emerald-500/20 to-blue-500/20 blur-3xl"
+          />
 
           <div className="relative space-y-8">
-            <div className="space-y-4">
-              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-400">
+            <div className="space-y-3">
+              <p className="text-xs sm:text-sm font-semibold uppercase tracking-[0.3em] text-blue-400">
                 Let's Connect
               </p>
-              <h2 className="text-4xl font-bold text-white sm:text-5xl">
+
+              <h2 className="text-3xl sm:text-5xl font-bold text-white">
                 Get in Touch
               </h2>
-              <p className="max-w-2xl text-lg text-slate-300">
+
+              <p className="max-w-2xl text-base sm:text-lg text-slate-300">
                 Available for freelance opportunities and collaborations
               </p>
             </div>
 
-            <div className="grid gap-6 sm:grid-cols-2 pt-6">
+            <div className="grid gap-4 sm:gap-6 sm:grid-cols-2 pt-2 sm:pt-6">
               <a
                 href="mailto:izhanwaseem6@gmail.com"
-                className="group flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition-all duration-300 hover:border-white/20 hover:bg-white/10"
+                className="group flex items-center gap-4 rounded-2xl border border-white/10 
+        bg-white/5 p-4 sm:p-6 backdrop-blur-sm transition-all duration-300 
+        hover:border-white/20 hover:bg-white/10"
               >
                 <div className="rounded-xl bg-blue-500/10 p-3 transition-colors group-hover:bg-blue-500/20">
                   <Mail className="h-6 w-6 text-blue-400" />
                 </div>
                 <div className="flex-1">
-                  <p className="text-sm font-medium text-slate-400">Email</p>
-                  <p className="mt-1 font-semibold text-white">
+                  <p className="text-xs sm:text-sm font-medium text-slate-400">
+                    Email
+                  </p>
+                  <p className="mt-1 font-semibold text-white break-all text-sm sm:text-base">
                     izhanwaseem6@gmail.com
                   </p>
                 </div>
@@ -337,14 +352,18 @@ export default function App() {
 
               <a
                 href="tel:+923486186394"
-                className="group flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition-all duration-300 hover:border-white/20 hover:bg-white/10"
+                className="group flex items-center gap-4 rounded-2xl border border-white/10 
+        bg-white/5 p-4 sm:p-6 backdrop-blur-sm transition-all duration-300 
+        hover:border-white/20 hover:bg-white/10"
               >
                 <div className="rounded-xl bg-emerald-500/10 p-3 transition-colors group-hover:bg-emerald-500/20">
                   <Phone className="h-6 w-6 text-emerald-400" />
                 </div>
                 <div className="flex-1">
-                  <p className="text-sm font-medium text-slate-400">Phone</p>
-                  <p className="mt-1 font-semibold text-white">
+                  <p className="text-xs sm:text-sm font-medium text-slate-400">
+                    Phone
+                  </p>
+                  <p className="mt-1 font-semibold text-white text-sm sm:text-base">
                     +92 348 6186394
                   </p>
                 </div>
