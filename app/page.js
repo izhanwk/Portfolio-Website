@@ -86,7 +86,7 @@ const capabilities = [
 
 export default function App() {
   return (
-    <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
+    <div className="relative min-h-screen overflow-hidden bg-linear-to-br from-slate-950 via-slate-900 to-slate-950">
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/20 via-transparent to-transparent" />
 
       <div className="pointer-events-none absolute -top-40 right-0 h-[300px] w-[300px] sm:h-[600px] sm:w-[600px] rounded-full bg-gradient-to-br from-blue-500/10 to-cyan-500/10 blur-3xl" />
@@ -107,7 +107,10 @@ export default function App() {
 
             <div className="space-y-4 sm:space-y-6">
               <h1 className="text-4xl sm:text-5xl font-bold leading-[1.1] tracking-tight text-white lg:text-7xl">
-                Izhan Waseem
+                Izhan.
+                <span className="text-4xl sm:text-5xl font-bold leading-[1.1] tracking-tight text-blue-600 lg:text-7xl">
+                  Dev
+                </span>
               </h1>
               <p className="text-lg sm:text-xl font-light text-blue-200/80 tracking-wide">
                 Full-Stack Developer
