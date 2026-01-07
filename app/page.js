@@ -101,7 +101,7 @@ export default function App() {
       name: "Izhan Waseem",
       jobTitle: "Full-Stack Developer",
       url: siteUrl,
-      email: "mailto:izhanwaseem6@gmail.com",
+      email: "mailto:hello@izhan.dev",
       knowsAbout: [
         "React.js",
         "Next.js",
@@ -378,7 +378,7 @@ export default function App() {
 
             <div className="grid gap-3 sm:gap-6 sm:grid-cols-2 pt-2 sm:pt-6">
               <a
-                href="mailto:izhanwaseem6@gmail.com"
+                href="mailto:hello@izhan.dev"
                 className="group flex items-center gap-3 sm:gap-4 rounded-xl sm:rounded-2xl border border-white/10 
         bg-white/5 p-3 sm:p-6 backdrop-blur-sm transition-all duration-300 
         hover:border-white/20 hover:bg-white/10"
@@ -391,7 +391,7 @@ export default function App() {
                     Email
                   </p>
                   <p className="mt-0.5 sm:mt-1 font-semibold text-white break-all text-xs sm:text-sm lg:text-base">
-                    izhanwaseem6@gmail.com
+                    hello@izhan.dev
                   </p>
                 </div>
               </a>
@@ -410,7 +410,7 @@ export default function App() {
                     Phone
                   </p>
                   <p className="mt-0.5 sm:mt-1 font-semibold text-white text-xs sm:text-sm lg:text-base">
-                    +92 348 6186394
+                    +92 311 8841688
                   </p>
                 </div>
               </a>
