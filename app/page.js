@@ -108,7 +108,7 @@ export default function App() {
             <div className="space-y-4 sm:space-y-6">
               <h1 className="text-4xl sm:text-5xl font-bold leading-[1.1] tracking-tight text-white lg:text-7xl">
                 Izhan.
-                <span className="text-4xl sm:text-5xl font-bold leading-[1.1] tracking-tight text-blue-600 lg:text-7xl">
+                <span className="text-4xl sm:text-5xl font-bold leading-[1.1] tracking-tight bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent lg:text-7xl">
                   Dev
                 </span>
               </h1>
@@ -207,10 +207,10 @@ export default function App() {
             {projects.map((project, index) => (
               <article
                 key={project.title}
-                className="group relative rounded-2xl sm:rounded-3xl border border-white/5 bg-gradient-to-br from-slate-800/40 to-slate-900/40 p-6 sm:p-8 backdrop-blur-sm transition-all duration-500 hover:border-white/20 hover:bg-slate-800/60"
+                className="group relative rounded-2xl sm:rounded-3xl border border-white/5 bg-linear-to-br from-slate-800/40 to-slate-900/40 p-6 sm:p-8 backdrop-blur-sm transition-all duration-500 hover:border-white/20 hover:bg-slate-800/60"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="absolute -inset-[1px] rounded-2xl sm:rounded-3xl bg-gradient-to-br from-blue-500/0 to-cyan-500/0 opacity-0 blur transition-opacity duration-500 group-hover:from-blue-500/20 group-hover:to-cyan-500/20 group-hover:opacity-100" />
+                <div className="absolute -inset-px rounded-2xl sm:rounded-3xl bg-linear-to-br from-blue-500/0 to-cyan-500/0 opacity-0 blur transition-opacity duration-500 group-hover:from-blue-500/20 group-hover:to-cyan-500/20 group-hover:opacity-100" />
 
                 <div className="relative space-y-4 sm:space-y-6">
                   <div className="flex items-center justify-between">
