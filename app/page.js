@@ -85,8 +85,42 @@ const capabilities = [
 ];
 
 export default function App() {
+  const siteUrl = "https://izhan.dev";
+  const structuredData = [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      name: "Izhan Waseem",
+      url: siteUrl,
+      description:
+        "Full-Stack Developer specializing in React, Next.js, and Node.js.",
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      name: "Izhan Waseem",
+      jobTitle: "Full-Stack Developer",
+      url: siteUrl,
+      email: "mailto:izhanwaseem6@gmail.com",
+      knowsAbout: [
+        "React.js",
+        "Next.js",
+        "Node.js",
+        "Express.js",
+        "Tailwind CSS",
+        "MongoDB",
+      ],
+    },
+  ];
+
   return (
     <div className="relative min-h-screen overflow-hidden bg-linear-to-br from-slate-950 via-slate-900 to-slate-950">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData),
+        }}
+      />
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/20 via-transparent to-transparent" />
 
       <div className="pointer-events-none absolute -top-40 right-0 h-[300px] w-[300px] sm:h-[600px] sm:w-[600px] rounded-full bg-gradient-to-br from-blue-500/10 to-cyan-500/10 blur-3xl" />

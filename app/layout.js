@@ -11,10 +11,38 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl = "https://izhan.dev";
+
 export const metadata = {
-  title: "Izhan — Product Designer & Frontend Lead",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "Izhan Waseem | Full-Stack Developer",
+    template: "%s | Izhan Waseem",
+  },
   description:
-    "Portfolio for Izhan, a multidisciplinary product designer and frontend lead crafting cinematic digital experiences.",
+    "Full-Stack Developer specializing in React, Next.js, and Node.js. Portfolio showcasing recent projects and core capabilities.",
+  alternates: {
+    canonical: siteUrl,
+  },
+  openGraph: {
+    type: "website",
+    url: siteUrl,
+    title: "Izhan Waseem | Full-Stack Developer",
+    description:
+      "Full-Stack Developer specializing in React, Next.js, and Node.js. Portfolio showcasing recent projects and core capabilities.",
+    siteName: "Izhan Waseem",
+  },
+  twitter: {
+    card: "summary",
+    title: "Izhan Waseem | Full-Stack Developer",
+    description:
+      "Full-Stack Developer specializing in React, Next.js, and Node.js. Portfolio showcasing recent projects and core capabilities.",
+  },
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({ children }) {
